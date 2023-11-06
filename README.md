@@ -24,3 +24,8 @@ we're using the Llama2-7B, Llama2-13B model deployed by the Andreessen Horowitz 
 - [4. Set the API token](#4-set-the-api-token)
 - [5. Deploy the app](#5-deploy-the-app)
 - [Wrapping Up](#wrapping-up)
+
+> ## The YouTube Video for reference
+> [How to build a Llama 2 chatbot](https://youtu.be/J8TgKxomS2g?si=-xQCyI82R4Zwg64x)
+> 
+> [How to Deploy Your App to Streamlit Community Cloud](https://youtu.be/HKoOBiAaHGg?si=83uyef-nXwo1Zys1)
