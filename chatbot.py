@@ -29,7 +29,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-user_input = st.text_input("👤 You: ", "Hello How may I assist you today?", key="input")
+user_input = st.text_input("👤 You: ", "Hello Chatbot", key="input")
 
 if user_input:
     output = generate_response(user_input)
