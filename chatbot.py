@@ -23,7 +23,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-user_input = st.text_input("👤 You: ", "Hello How may I assist you today?", key="input")
+user_input = st.text_input("👤 You: ", "Hello", key="input")
 
 if user_input:
     output = generate_response(user_input)
@@ -40,4 +40,4 @@ if st.session_state['generated']:
             f'<p style="font-size: 20px; color: #33ccff;">🤖 Bot: {st.session_state["generated"][i]}</p>',
             unsafe_allow_html=True,
         )
-        st.text("----------------")
+        st.text("-------------")
