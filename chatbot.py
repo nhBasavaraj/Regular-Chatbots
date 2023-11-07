@@ -1,19 +1,25 @@
-import openai
+import requests
 import streamlit as st
 
-# Set your OpenAI API key here
-openai.api_key = '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'
+# Replace 'YOUR_API_KEY' with your actual OpenAI API key
+API_KEY = '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'
+headers = {
+    'Content-Type': 'application/json',
+    'Authorization': f'Bearer {API_KEY}'
+}
 
 def generate_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
-    )
-    return response.choices[0].text
+    url = 'https://api.openai.com/v1/chat/completions'
+    payload = {
+        "model": "gpt-3.5-turbo",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.7
+    }
+
+    response = requests.post(url, json=payload, headers=headers)
+    response_data = response.json()
+    completion = response_data['choices'][0]['message']['content'] if 'choices' in response_data else 'No completion available'
+    return completion
 
 st.title("🤖 chatBot : openAI GPT-3 + Streamlit")
 
@@ -23,7 +29,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-user_input = st.text_input("👤 You: ", "Hello", key="input")
+user_input = st.text_input("👤 You: ", "Hello How may I assist you today?", key="input")
 
 if user_input:
     output = generate_response(user_input)
@@ -40,4 +46,4 @@ if st.session_state['generated']:
             f'<p style="font-size: 20px; color: #33ccff;">🤖 Bot: {st.session_state["generated"][i]}</p>',
             unsafe_allow_html=True,
         )
-        st.text("-------------")
+        st.text("-----")
