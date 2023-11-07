@@ -1,4 +1,5 @@
 import openai
+import os
 import streamlit as st
 from streamlit_chat import message
 
