@@ -1,7 +1,5 @@
 import openai
-import os
 import streamlit as st
-from streamlit_chat import message
 
 openai.api_key = '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'
 
@@ -11,7 +9,7 @@ openai.api_key = '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'
 # in more random responses, 
 # while a lower temperature will result in more predictable responses.
 def generate_response(prompt):
-    completions = openai.Completion.create (
+    completions = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
         max_tokens=1024,
@@ -20,12 +18,9 @@ def generate_response(prompt):
         temperature=0.5,
     )
 
-    message = completions.choices[0].text
-    return message
-
+    return completions.choices[0].text
 
 st.title("🤖 chatBot : openAI GPT-3 + Streamlit")
-
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
@@ -33,13 +28,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-
-def get_text():
-    input_text = st.text_input("You: ","Hello, how are you?", key="input")
-    return input_text 
-
-
-user_input = get_text()
+user_input = st.text_input("👤 You: ", "Hello", key="input")
 
 if user_input:
     output = generate_response(user_input)
@@ -47,7 +36,13 @@ if user_input:
     st.session_state.generated.append(output)
 
 if st.session_state['generated']:
-
-    for i in range(len(st.session_state['generated'])-1, -1, -1):
-        message(st.session_state["generated"][i], key=str(i))
-        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+    for i in range(len(st.session_state['generated']) - 1, -1, -1):
+        st.markdown(
+            f'<p style="font-size: 20px; color: #ff5733;">👤 You: {st.session_state["past"][i]}</p>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<p style="font-size: 20px; color: #33ccff;">🤖 Bot: {st.session_state["generated"][i]}</p>',
+            unsafe_allow_html=True,
+        )
+        st.text("------------------")
