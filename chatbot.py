@@ -39,7 +39,7 @@ if user_input:
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated']) - 1, -1, -1):
         st.markdown(
-            f'<p style="font-size: 16px; color: #ff5733;">👤 You: {st.session_state["past"][i]}</p>',
+            f'<p style="font-size: 20px; color: #ff5733;">👤 You: {st.session_state["past"][i]}</p>',
             unsafe_allow_html=True,
         )
         st.markdown(
