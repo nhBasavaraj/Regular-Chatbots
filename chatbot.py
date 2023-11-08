@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 # Replace 'YOUR_API_KEY' with your actual OpenAI API key
-API_KEY = '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'
+API_KEY = st.secrets['OPENAI_API_TOKEN']
 headers = {
     'Content-Type': 'application/json',
     'Authorization': f'Bearer {API_KEY}'
