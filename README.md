@@ -5,7 +5,7 @@ The chatbot is powered by the GPT-3 text-davinci-003 model and allows users to c
 
 #  <span style="font-size:larger; font-weight:bold;">Demo App</span>
   >
-  > [Open in Streamlit]()
+  > [Open in Streamlit](https://chatbot-openai-augenai.streamlit.app/)
 
 # Prerequisite libraries
 1) streamlit
