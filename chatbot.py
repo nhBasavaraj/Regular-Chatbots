@@ -46,4 +46,4 @@ if st.session_state['generated']:
             f'<p style="font-size: 20px; color: #FFFFFF;">🤖 Bot: {st.session_state["generated"][i]}</p>',
             unsafe_allow_html=True,
         )
-        st.text("-----")
+        st.text("----------------------")
