@@ -43,7 +43,7 @@ if st.session_state['generated']:
             unsafe_allow_html=True,
         )
         st.markdown(
-            f'<p style="font-size: 20px; color: #33ccff;">🤖 Bot: {st.session_state["generated"][i]}</p>',
+            f'<p style="font-size: 20px; color: #FFFFFF;">🤖 Bot: {st.session_state["generated"][i]}</p>',
             unsafe_allow_html=True,
         )
         st.text("-----")
