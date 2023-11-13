@@ -2,8 +2,9 @@ import streamlit as st
 import asyncio
 from langchain import HuggingFaceHub
 from langchain import PromptTemplate, LLMChain
+from bs4 import BeautifulSoup  # Make sure to install this library
 
-HUGGINGFACEHUB_API_TOKEN = "ENTER HUGGING FACE TOKEN KEY HERE"
+HUGGINGFACEHUB_API_TOKEN = "ENTER HUGGINGFACE_API_TOKEN_KEY"
 
 repo_id = "tiiuae/falcon-7b-instruct"
 llm = HuggingFaceHub(
@@ -57,8 +58,11 @@ if submit_button:
     asyncio.set_event_loop(loop)
     response = loop.run_until_complete(async_acall())
 
+    # Remove HTML tags from the response
+    response_text = BeautifulSoup(response["text"], "html.parser").get_text()
+
     # Add the current question and answer to the conversation history
-    st.session_state.conversation.append({"question": question, "answer": response["text"]})
+    st.session_state.conversation.append({"question": question, "answer": response_text})
 
     # Display the entire conversation in reverse order
     for conv in reversed(st.session_state.conversation):
