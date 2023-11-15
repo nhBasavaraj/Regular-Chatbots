@@ -4,7 +4,7 @@ import cohere
 st.title("🤖 Cohere Chatbot")
 
 # Cohere API key
-cohere_key = 'OyjmiSGIOTWSxwyP2sPxhzUKi7WYP6KwUqPG5N3N'
+cohere_key = 'YOUR_COHERE_API_KEY'
 co = cohere.Client(cohere_key)
 
 # Initialize the conversation history
