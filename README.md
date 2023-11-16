@@ -46,4 +46,4 @@ This repository contains a simple chatbot powered by the Palm-2 API and deployed
 ## Dependencies
 
 - [Streamlit](https://streamlit.io/)
-- [Palm-2](https://your-palm-2-dashboard.com/)
+- [Palm-2](https://makersuite.google.com/app/home)
