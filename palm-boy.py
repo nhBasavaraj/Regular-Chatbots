@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup  # Make sure to install this library
 import asyncio
 import google.generativeai as palm
 
-palm.configure(api_key="")
+palm.configure(api_key="YOUR_PALM_2_API_KEY")
 
 defaults = {
     'model': 'models/text-bison-001',
