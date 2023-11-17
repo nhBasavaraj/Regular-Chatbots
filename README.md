@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository contains a simple chatbot powered by the Palm-2 API and deployed as a Streamlit app. The chatbot engages in natural language conversations and utilizes the Palm-2 language model.
+This repository contains a simple chatbot powered by the Palm-2 API.
+
+Chatbot PaLM-2 is a conversational AI project powered by the Palm-2 (Bison 001) language model. The chatbot is designed to engage in natural language conversations, providing responses based on the sophisticated language understanding capabilities of Palm-2.
 
 ## Features
 
