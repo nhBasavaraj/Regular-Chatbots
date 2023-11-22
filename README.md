@@ -75,7 +75,6 @@ This chatbot is created using Python, OpenAI, and Streamlit libraries. It is pow
 5. **Interact with the chatbot:**
    Open your web browser and navigate to the provided local address (usually http://localhost:8501). Enter prompts and receive natural language responses from the chatbot.
 
-
 ## Dependencies
 
 - [Streamlit](https://streamlit.io/)
