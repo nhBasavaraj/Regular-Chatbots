@@ -1,4 +1,4 @@
-# Chatbot-Chat-Choice-LLM
+# Chatbot-Choose-Diff-LLM
 ## Chatbot with Multiple Language Models
 
 This project features a variety of chatbots powered by different language models, providing users with the flexibility to choose from various conversational AI technologies. Each chatbot offers unique features and characteristics, enhancing the overall user experience.
