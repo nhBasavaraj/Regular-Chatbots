@@ -79,7 +79,7 @@ This chatbot is created using Python, OpenAI, and Streamlit libraries. It is pow
     ```
 
 5. **Interact with the chatbot:**
-   Open your web browser and navigate to the provided local address (usually http://localhost:8501). Enter prompts and receive natural language responses from the chatbot.
+   Open your web browser and navigate to the provided AWS Studio URL, removing any trailing parameters (e.g., "lab?") after the default, and then append /proxy/8501(port number)/ to the end. The URL format should look like this: https://{NOTEBOOK_URL}/proxy/8501/.(This Instructions is only for AWS studio). Enter prompts and receive natural language responses from the chatbot.
 
 ## Dependencies
 
