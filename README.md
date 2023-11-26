@@ -43,6 +43,13 @@ This chatbot is created using Python, OpenAI, and Streamlit libraries. It is pow
 - **Conversation History Tracking:** The chat history is stored and displayed in a chat window.
 -----------
 
+### Jina Embeddings
+This chatbot that utilizes Jina embeddings for embedding words or sentences. The chatbot is deployed as a Streamlit app, providing a user-friendly interface for interacting with the Jina embeddings.
+
+**Features:**
+- **Embedding Words/Sentences:** Use the Jina embeddings to embed words or sentences for various natural language processing tasks.
+- **Streamlit Interface:** The chatbot is deployed as a Streamlit app, providing an intuitive interface for embedding operations.
+- **Conversation History:** Keep track of your embedding requests with the chatbot through a convenient history display.
 
 ## Usage
 
