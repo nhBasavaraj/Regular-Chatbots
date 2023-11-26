@@ -79,6 +79,9 @@ This chatbot that utilizes Jina embeddings for embedding words or sentences. The
      - Sign in or create an account.
      - Navigate to your [API tokens page](https://huggingface.co/settings/tokens).
      - Copy your Hugging Face API token.
+    
+    - **Jina Embeddings:**
+     - Obtain your Jina API key from [here](https://jina.ai/embeddings/).
 
 4. **Run the Streamlit app:**
     ```bash
