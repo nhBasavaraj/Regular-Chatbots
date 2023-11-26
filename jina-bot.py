@@ -6,7 +6,7 @@ def get_jina_embeddings(texts):
     url = 'https://api.jina.ai/v1/embeddings'
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer jina_7f866ddc08134f3a9c19e7940fcb5e37QS9XyVII6_fVp8RKyHy54Y7AD8KE'
+        'Authorization': 'Bearer JINA_API_KEY'
     }
     data = {
         'input': texts,
