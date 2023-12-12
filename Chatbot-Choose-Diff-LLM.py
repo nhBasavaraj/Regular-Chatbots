@@ -8,10 +8,11 @@ import cohere
 import google.generativeai as palm
 
 # Replace 'YOUR_API_KEY' with your actual OpenAI API key
-OPENAI_API_KEY = "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"
-COHERE_API_KEY = 'OyjmiSGIOTWSxwyP2sPxhzUKi7WYP6KwUqPG5N3N'
-HUGGINGFACEHUB_API_TOKEN = "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"
-PALM_API_KEY = "AIzaSyAwv6Rg2JH5L-aIKMDrubH3zq0OJC69ISQ"
+OPENAI_API_KEY = "ENTER_API_KEY_HERE"
+COHERE_API_KEY = 'ENTER_API_KEY_HERE'
+HUGGINGFACEHUB_API_TOKEN = "ENTER_API_KEY_HERE"
+PALM_API_KEY = "ENTER_API_KEY_HERE"
+JINA_API_KEY = "ENTER_API_KEY_HERE"
 
 # Define chatbot options
 chatbot_options = ["OpenAI GPT-3", "Falcon LLM", "Cohere", "PaLM", "Jina"]
@@ -146,7 +147,7 @@ elif selected_chatbot == "Cohere":
     st.title("🤖 Cohere Chatbot")
 
     # Replace 'YOUR_COHERE_API_KEY' with your actual Cohere API key
-    COHERE_API_KEY = 'OyjmiSGIOTWSxwyP2sPxhzUKi7WYP6KwUqPG5N3N'
+    COHERE_API_KEY = COHERE_API_KEY
     co = cohere.Client(COHERE_API_KEY)
 
     # Initialize the conversation history
@@ -258,7 +259,7 @@ elif selected_chatbot == "Jina":
         url = 'https://api.jina.ai/v1/embeddings'
         headers = {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer jina_7f866ddc08134f3a9c19e7940fcb5e37QS9XyVII6_fVp8RKyHy54Y7AD8KE'
+            'Authorization': 'Bearer {JINA_API_KEY}'
         }
         data = {
             'input': texts,
