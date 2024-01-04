@@ -23,3 +23,9 @@ Navigate to the individual chatbot folders to find instructions on setting up an
 
 Feel free to experiment and explore the capabilities of each chatbot!
 
+## Bash File
+- [bash-file](https://github.com/Fig-MLOps/Regular-Chatbots/blob/main/merge_repositories.sh)
+  
+This Bash script automates the process of merging multiple external repositories, such as Chatbot-OpenAI and Chatbot-LLM, into the Regular-Chatbots repository on GitHub using the subtree merge strategy.
+
+The script facilitates the integration of various chatbot-related repositories into a centralized Regular-Chatbots repository, streamlining version control and collaboration for a cohesive chatbot development environment.
