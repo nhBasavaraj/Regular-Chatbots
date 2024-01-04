@@ -10,6 +10,7 @@ This repository houses various text generation chatbots built on different langu
 - [Chatbot-Cohere](./Chatbot-Cohere/)
 - [Chatbot-Falcon](./Chatbot-Falcon/)
 - [Chatbot-Llama2](./Chatbot-Llama2/)
+- [Chatbot-LLM](./Chatbot-LLM)
 
 ## Description
 
