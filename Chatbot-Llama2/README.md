@@ -1,7 +1,6 @@
 # Llama-2-Chatbot
 This chatbot is created using the open-source Llama 2 LLM model from Meta.
 
-we're using the Llama2-7B, Llama2-13B model deployed by the Andreessen Horowitz (a16z) team and hosted on the Replicate platform.
 
 #  <span style="font-size:larger; font-weight:bold;">Demo App</span>
   >
